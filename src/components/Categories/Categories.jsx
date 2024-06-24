@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useCategory, useFilter } from "../../Context";
-import Carousel from 'react-elastic-carousel';
+// import Carousel from 'react-elastic-carousel';
 import "./Categories.css";
 
 export const Categories = () => {
@@ -35,11 +35,11 @@ export const Categories = () => {
 
   return (
     <section className="categories d-flex gap">
-      <Carousel className="carousel" itemsToShow={9} itemsToScroll={6} pagination={false}>
+{/*       <Carousel className="carousel" itemsToShow={9} itemsToScroll={6} pagination={false}>
         {
           categories && categories.map(({ _id, category }) => <span key={_id} className={`${category === hotelCategory ? "category-color" : ""} item`} onClick={() => handleCategoryClick(category)}>{category}</span>)
         }
-      </Carousel>
+      </Carousel> */}
       <div>
         <button
           className="button btn-filter d-flex align-center gap-small cursor-pointer"
